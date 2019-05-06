@@ -1,0 +1,12 @@
+apiVersion: v1
+kind: Pod
+metadata:
+  name: ourapp-container
+  labels:
+    component: web
+spec:
+  containers:
+    - name: ourapp
+      image: covenant/dockerize-nodejs-image
+      ports:
+        - containerPort: 5000
